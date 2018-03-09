@@ -54,3 +54,4 @@ sudo umount /mnt/tmp
 echo
 echo "checking the image again"
 sudo hexdump newimage.img | less
+echo "image not find mean unmount"
