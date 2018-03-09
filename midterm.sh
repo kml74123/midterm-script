@@ -5,8 +5,7 @@ echo
 echo "Making a directory call test"
 mkdir test
 echo
-echo
-cd "CD to test"
+echo "CD to test"
 echo
 cd test
 echo
@@ -37,15 +36,15 @@ sudo hexdump newimage.img
 echo
 echo "ext4 the imag"
 echo
-sudo mkfd -t ext4 newimage.img
+sudo mkfs -t ext4 newimage.img
 echo
 echo "mount the image"
 mkdir /mnt/tmp
 sudo mount newimage.img
 sudo mount; df -h
-lsnlk
+lsblk
 echo
-echo"CD to /mnt/tmp"
+echo "CD to /mnt/tmp"
 echo
 cd /mnt/tmp
 echo "Hello World".testingfile.txt
