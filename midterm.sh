@@ -40,7 +40,7 @@ sudo mkfs -t ext4 newimage.img
 echo
 echo "mount the image"
 mkdir /mnt/tmp
-sudo mount newimage.img
+sudo mount newimage.img /mnt/tmp
 sudo mount; df -h
 lsblk
 echo
