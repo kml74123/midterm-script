@@ -27,7 +27,7 @@ echo
 echo "Check if file1.txt is gone"
 ls -l
 
-echo "Checking parition tbale"
+echo "Checking parition table"
 parted -l
 echo
 echo "using DD comand to create image"
