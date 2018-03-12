@@ -44,7 +44,7 @@ sudo mount newimage.img /mnt/tmp
 sudo mount; df -h
 lsblk
 echo
-echo "CD to /mnt/tmp"
+echo "cd to /mnt/tmp"
 echo
 cd /mnt/tmp
 echo "Hello World">testingfile.txt
