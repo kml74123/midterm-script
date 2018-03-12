@@ -17,7 +17,7 @@ ls -l
 echo
 echo "write Hello World into the file"
 echo
-echo "Hello World"> file.txt
+echo "Hello World"> file1.txt
 echo "Check if Hello World is in the file"
 cat file1.txt
 echo
@@ -47,7 +47,7 @@ echo
 echo "CD to /mnt/tmp"
 echo
 cd /mnt/tmp
-echo "Hello World".testingfile.txt
+echo "Hello World">testingfile.txt
 echo
 echo "unmount the image"
 sudo umount /mnt/tmp
