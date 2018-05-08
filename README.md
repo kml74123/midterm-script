@@ -1,1 +1,1 @@
-# midterm-script(edited it)
+# midterm-script( fix)
