@@ -1,1 +1,1 @@
-# midterm-script( fix)
+# midterm-script( new midterm script)
