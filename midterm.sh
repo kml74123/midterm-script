@@ -1,57 +1,36 @@
 #!/bin/bash
-echo "This is my script"
-echo
+echo 'this is my midterm script'
 
-echo "Making a directory call test"
-mkdir test
-echo
-echo "CD to test"
-echo
-cd test
-echo
-echo "Create a file in test call file1.txt"
-touch file1.txt
-echo
-echo "Check if the file is created"
+echo 'check where we are'
+pwd
+echo 'create a dir call  kongmeng and a file call people'
+mkdir kongmeng
+touch people.txt
+echo 'check if the file and dir is there'
 ls -l
-echo
-echo "write Hello World into the file"
-echo
-echo "Hello World"> file1.txt
-echo "Check if Hello World is in the file"
-cat file1.txt
-echo
-echo "Next Delete the file1.txt"
-rm file1.txt
-echo
-echo "Check if file1.txt is gone"
+echo 'give permission to people.txt'
+chmod 777 people.txt
+echo 'write name into people.txt'
+echo 'kongmeng moua lee her lulu' >> people.txt
+echo 'use cat to see the names in people.txt'
+cat people.txt
+echo 'move the people.txt into kongmeng dir'
+mv  people.txt kongmeng
+echo 'check in kongmeng dir'
+cd kongmeng
+echo 'check with ls'
+ls -l
+echo 'yes the file is there'
+
+echo 'now create more files in kongmeng dir'
+touch ice fire water wind lighting
+echo 'see if they are there'
+ls -l
+echo 'now delete all the file'
+rm ice fire water wind lighting people.txt
+echo 'check if they gone'
 ls -l
 
-echo "Checking parition table"
-parted -l
-echo
-echo "using DD comand to create image"
-sudo dd if=/dev/zero of=newimage.img bs=1M count=32
-sudo hexdump newimage.img
-echo
-echo "ext4 the imag"
-echo
-sudo mkfs -t ext4 newimage.img
-echo
-echo "mount the image"
-mkdir /mnt/tmp
-sudo mount newimage.img /mnt/tmp
-sudo mount; df -h
-lsblk
-echo
-echo "cd to /mnt/tmp"
-echo
-cd /mnt/tmp
-echo "Hello World">testingfile.txt
-echo
-echo "unmount the image"
-sudo umount /mnt/tmp
-echo
-echo "checking the image again"
-sudo hexdump newimage.img | less
-echo "image not find mean unmount"
+
+echo 'it all gone'
+
